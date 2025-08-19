@@ -6,3 +6,5 @@ langchain
 langchain_community
 transformers
 torch
+sentence-transformers
+
