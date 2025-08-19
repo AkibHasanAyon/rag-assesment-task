@@ -120,7 +120,7 @@ st.title("RAG Chatbot")
 
 # Initialize conversation history in the session if it doesn't already exist
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "message": "Hello! How can I help you today? 👇"}]
+    st.session_state["messages"] = [{"role": "assistant", "message": "Hello! How can I help you today?"}]
 
 # Load previous chat history from the database into session state
 chat_history = fetch_chat_history(limit=15)
@@ -183,4 +183,5 @@ if st.button("Clear Chat History"):
     clear_chat_history()
     st.session_state["messages"] = []
     st.success("Chat history cleared successfully.")
+
 
