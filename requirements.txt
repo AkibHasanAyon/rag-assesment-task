@@ -3,3 +3,4 @@ streamlit
 numpy
 requests
 langchain
+langchain_community
