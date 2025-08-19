@@ -10,8 +10,9 @@ from typing import List, Dict, Any
 from langchain_community.embeddings import HuggingFaceBgeEmbeddings
 
 # Access secrets directly using Streamlit's st.secrets
-GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
-GEMINI_API_URL = st.secrets["GEMINI_API_URL"]
+GEMINI_API_KEY = st.secrets["general"]["GEMINI_API_KEY"]
+GEMINI_API_URL = st.secrets["general"]["GEMINI_API_URL"]
+
 
 # Define file paths for FAISS index and metadata
 BASE_DIR = os.getcwd()  # Get current working directory
