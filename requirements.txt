@@ -4,3 +4,5 @@ numpy
 requests
 langchain
 langchain_community
+transformers
+torch
